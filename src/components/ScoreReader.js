@@ -68,7 +68,7 @@ function ScoreReader({ totalQuestions, correctCount, wrongCount }) {
         />
         <ActualScore
           width={actualPercentage}
-          title={`Your actual score = ${actualPercentage}%`}
+          title={`Your current score = ${actualPercentage}%`}
         />
         <MaximumScore
           width={highestPercentage}
