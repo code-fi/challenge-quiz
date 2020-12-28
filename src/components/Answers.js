@@ -50,9 +50,9 @@ function Answers({ answers = [], onAnswerSelected, answered }) {
   const renderAnswers = answers.map((answer, index) => (
     <AnswerButton
       onClick={() => answerSelected(answer)}
-      isWrong={answered && !isCorrect}
+      isWrong={answered && answered !== answer}
       disabled={answered}
-      isActive={answered === answer}
+      isActive={selected === answer}
       key={index}
     >
       {decodeURIComponent(answer)}
